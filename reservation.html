@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Stay | Kempinski</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="book.css">
+  <style>
+    /* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #0f0f0f;
+  line-height: 1.8;
+  background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+  background: url('booking-bg.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+/* Booking Form */
+.booking-form {
+  padding: 2rem;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem auto;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.booking-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking-form label {
+  font-size: 1.2rem;
+}
+
+.booking-form input, 
+.booking-form select, 
+.booking-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.booking-form button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+/* Room Previews */
+.room-previews {
+  padding: 2rem;
+  text-align: center;
+}
+
+.room-previews h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.room-gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.room-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+}
+
+.room-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room-item p {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Booking Info */
+.booking-info {
+  padding: 2rem;
+  text-align: center;
+}
+
+.booking-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.booking-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booking-info li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact or Help Info */
+.contact-help {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+  </style>
+</head>
+<body style="background-image: url('book2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">  <header class="hero">
+    <div class="overlay">
+      <h1>Book Your Stay</h1>
+      <p>Choose your dates, room type, and enjoy a luxury experience at Kempinski.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Booking Form -->
+    <section class="booking-form">
+      <h2>Reserve Your Room</h2>
+      <form action="#" method="post">
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="roomtype" required>
+          <option value="king-suite">King Suite – Sea View</option>
+          <option value="queen-suite">Queen Suite – Garden View</option>
+          <option value="deluxe-room">Deluxe Room</option>
+        </select>
+
+        <label for="requests">Special Requests (Optional):</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Let us know if you have any special requirements"></textarea>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <!-- Photos or Room Previews -->
+    <section class="room-previews">
+      <h2>Explore Our Rooms</h2>
+      <div class="room-gallery">
+        <div class="room-item">
+          <img src="king-suite.jpg" alt="King Suite – Sea View">
+          <p>King Suite – Sea View</p>
+        </div>
+        <div class="room-item">
+          <img src="queen-suite.jpg" alt="Queen Suite – Garden View">
+          <p>Queen Suite – Garden View</p>
+        </div>
+        <div class="room-item">
+          <img src="deluxe-room.jpg" alt="Deluxe Room">
+          <p>Deluxe Room</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Info or Policy -->
+    <section class="booking-info">
+      <h2>Booking Information</h2>
+      <ul>
+        <li><strong>Check-in:</strong> From 2:00 PM</li>
+        <li><strong>Check-out:</strong> Until 12:00 PM</li>
+        <li><strong>Cancellation Policy:</strong> Free cancellation up to 24 hours before check-in.</li>
+        <li><strong>Payment Methods:</strong> Visa, MasterCard, PayPal</li>
+      </ul>
+    </section>
+
+    <!-- Contact or Help Info -->
+    <section class="contact-help">
+      <p>Need help? Call us at <strong>+254 700 123 456</strong> or email <strong>bookings@kempinskihotel.com</strong>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kempinski. All rights reserved.</p>
+  </footer>
+</body>
+</html>

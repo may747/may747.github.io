@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Kempinski</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<style>
+    /* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  background-color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: url('gallery-bg.jpg') no-repeat center center/cover;
+  color: rgb(5, 5, 5);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.4rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.photo-item {
+  background: rgb(15, 12, 12);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.photo-item p {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.photo-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+</style>
+<body>
+  <header>
+    <h1>Explore Our Gallery</h1>
+    <p>Take a visual tour of our luxurious spaces and world-class amenities.</p>
+  </header>
+
+  <main>
+    <!-- Rooms Category -->
+    <section class="gallery-section">
+      <h2>Rooms</h2>
+      <div class="photo-grid">
+        <div class="photo-item">
+          <img src="room1.jpg" alt="King Suite">
+          <p>King Suite</p>
+        </div>
+        <div class="photo-item">
+          <img src="room2.jpg" alt="Queen Suite">
+          <p>Queen Suite</p>
+        </div>
+        <div class="photo-item">
+          <img src="room3.jpg" alt="Deluxe Room">
+          <p>Deluxe Room</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dining Category -->
+    <section class="gallery-section">
+      <h2>Dining</h2>
+      <div class="photo-grid">
+        <div class="photo-item">
+          <img src="dining1.jpg" alt="Fine Dining">
+          <p>Fine Dining</p>
+        </div>
+        <div class="photo-item">
+          <img src="dining2.jpg" alt="Buffet">
+          <p>Buffet</p>
+        </div>
+        <div class="photo-item">
+          <img src="dining3.jpg" alt="Outdoor Dining">
+          <p>Outdoor Dining</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wellness & Spa Category -->
+    <section class="gallery-section">
+      <h2>Wellness & Spa</h2>
+      <div class="photo-grid">
+        <div class="photo-item">
+          <img src="spa1.jpg" alt="Spa Treatment">
+          <p>Spa Treatment</p>
+        </div>
+        <div class="photo-item">
+          <img src="spa2.jpg" alt="Relaxation Area">
+          <p>Relaxation Area</p>
+        </div>
+        <div class="photo-item">
+          <img src="spa3.jpg" alt="Poolside">
+          <p>Poolside</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events & Conferences Category -->
+    <section class="gallery-section">
+      <h2>Events & Conferences</h2>
+      <div class="photo-grid">
+        <div class="photo-item">
+          <img src="event1.jpg" alt="Conference Room">
+          <p>Conference Room</p>
+        </div>
+        <div class="photo-item">
+          <img src="event2.jpg" alt="Banquet Hall">
+          <p>Banquet Hall</p>
+        </div>
+        <div class="photo-item">
+          <img src="event3.jpg" alt="Wedding Setup">
+          <p>Wedding Setup</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outdoor Views Category -->
+    <section class="gallery-section">
+      <h2>Outdoor Views</h2>
+      <div class="photo-grid">
+        <div class="photo-item">
+          <img src="outdoor1.jpg" alt="Garden View">
+          <p>Garden View</p>
+        </div>
+        <div class="photo-item">
+          <img src="outdoor2.jpg" alt="City View">
+          <p>City View</p>
+        </div>
+        <div class="photo-item">
+          <img src="outdoor3.jpg" alt="Sunset View">
+          <p>Sunset View</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kempinski. All rights reserved.</p>
+  </footer>
+</body>
+</html>

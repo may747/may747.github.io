@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Kempinski</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <style>
+    /* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  height: 100%;
+}
+
+/* Background Image and Overlay */
+.background {
+  background: url('contact-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.4rem;
+  color: #ddd;
+}
+
+/* Contact Container */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contact Information Section */
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Contact Form Section */
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+/* Map Section */
+.map h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.map iframe {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Media Section */
+.social-media h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+  </style>
+</head>
+<body style="background-image: url('contact.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+  <div class="background">
+    <div class="overlay">
+      <header>
+        <h1>Get in Touch</h1>
+        <p>We're here to assist you 24/7. Whether you have a question, need support, or want to make a booking, we'd love to hear from you.</p>
+      </header>
+
+      <main class="contact-container">
+        <!-- Contact Information -->
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <p><strong>Phone:</strong> +254 700 123 456</p>
+          <p><strong>Email:</strong> reservations@yourhotel.com</p>
+          <p><strong>Address:</strong> Kempinski, Riverside Lane, Nairobi, Kenya</p>
+          <p><strong>Operating Hours:</strong> Reception open 24 hours</p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+
+        <!-- Map -->
+        <section class="map">
+          <h2>Our Location</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Social Media -->
+        <section class="social-media">
+          <h2>Connect with Us</h2>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://wa.me/254700123456" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
